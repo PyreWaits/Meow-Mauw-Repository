@@ -5299,6 +5299,7 @@ GameObject:
   - component: {fileID: 7625972835618665446}
   - component: {fileID: 7625972835618665445}
   - component: {fileID: 7625972835618665444}
+  - component: {fileID: 3924409322341886789}
   m_Layer: 0
   m_Name: Crown
   m_TagString: Untagged
@@ -5385,12 +5386,24 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7625972835618665451}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.5000001
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+--- !u!114 &3924409322341886789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7625972835618665451}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: feed9f9589f96af4fa6ca52cfba47541, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7625972835634823712
 GameObject:
   m_ObjectHideFlags: 0

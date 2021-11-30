@@ -8,13 +8,14 @@ public class Test : MonoBehaviour
 public Vector2 turn;
 
 
-    // Update is called once per frame
+    // This whole thing needs a lot of work. It's a placeholder rn
     void Update()
     {
         MovePlayer();
 
     }
 
+    //Turns and moves the player doesn't work good cause it's using transform
     void MovePlayer()
     {
         float xValue = Input.GetAxis("Horizontal") * Time.deltaTime * moveSpeed;
