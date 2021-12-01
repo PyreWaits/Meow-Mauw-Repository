@@ -4152,6 +4152,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -4285798590356607891, guid: b315b52430f7eb54497b16fd29ea5ff4, type: 3}
+      propertyPath: level
+      value: Hub Area
+      objectReference: {fileID: 0}
     - target: {fileID: 8564956245594243160, guid: b315b52430f7eb54497b16fd29ea5ff4, type: 3}
       propertyPath: m_Name
       value: Portal
