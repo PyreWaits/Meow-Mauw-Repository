@@ -8,12 +8,27 @@ namespace CMF
 	//This script is an example of a very simple walker controller that covers only the basics of character movement;
     public class SimpleWalkerController : Controller
     {
+        //For colour changer
+        MeshRenderer colorMesh;
+        //move stuff
         private Mover mover;
         float currentVerticalSpeed = 0f;
         bool isGrounded;
         public float movementSpeed = 7f;
+        public float baseSpeed =7f;
         public float jumpSpeed = 10f;
         public float gravity = 10f;
+
+        //dash stuff
+        public float dashSpeed=20f;
+        public float dashTime=0.2f;
+
+        public float dashCooldown;
+        public float nextDash=2f;
+        float startTime;
+
+
+        
 
 
 		Vector3 lastVelocity = Vector3.zero;
@@ -22,15 +37,18 @@ namespace CMF
         CharacterInput characterInput;
         Transform tr;
 
+
         // Use this for initialization
         void Start()
         {
             tr = transform;
             mover = GetComponent<Mover>();
             characterInput = GetComponent<CharacterInput>();
+            colorMesh=GetComponentInChildren<MeshRenderer>();
+           startTime=Time.realtimeSinceStartup+dashTime;
         }
 
-        void FixedUpdate()
+        void Update()
         {
             //Run initial mover ground check;
             mover.CheckForGround();
@@ -58,14 +76,39 @@ namespace CMF
                     currentVerticalSpeed = 0f;
             }
 
-            //Handle jumping;
+            //Handle jumping
             if ((characterInput != null) && isGrounded && characterInput.IsJumpKeyPressed())
             {
                 OnJumpStart();
                 currentVerticalSpeed = jumpSpeed;
                 isGrounded = false;
             }
+    
+            
 
+            //Dashing
+            if(Input.GetKeyDown(KeyCode.LeftShift)&&Time.realtimeSinceStartup>dashCooldown)
+            {
+                startTime=Time.realtimeSinceStartup+dashTime;
+                dashCooldown=Time.realtimeSinceStartup+nextDash;
+                movementSpeed=dashSpeed;
+            }
+
+            if(startTime<Time.realtimeSinceStartup)
+            {
+                movementSpeed=baseSpeed;
+            }
+
+
+            //Colour Change for dash
+            if(Time.realtimeSinceStartup>dashCooldown)
+            {
+                colorMesh.material.color=Color.black;
+            }
+            else
+            {
+            colorMesh.material.color=Color.gray;
+            }
 
             //Add vertical velocity;
             _velocity += tr.up * currentVerticalSpeed;
