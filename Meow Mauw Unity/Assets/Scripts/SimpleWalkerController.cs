@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -8,10 +8,12 @@ namespace CMF
 	//This script is an example of a very simple walker controller that covers only the basics of character movement;
     public class SimpleWalkerController : Controller
     {
+        
         //For colour changer
         MeshRenderer colorMesh;
         //move stuff
         private Mover mover;
+
         float currentVerticalSpeed = 0f;
         bool isGrounded;
         public float movementSpeed = 7f;
@@ -28,6 +30,7 @@ namespace CMF
         float startTime;
 
 
+
         
 
 
@@ -36,6 +39,8 @@ namespace CMF
 		public Transform cameraTransform;
         CharacterInput characterInput;
         Transform tr;
+
+     
 
 
         // Use this for initialization
@@ -46,6 +51,7 @@ namespace CMF
             characterInput = GetComponent<CharacterInput>();
             colorMesh=GetComponentInChildren<MeshRenderer>();
            startTime=Time.realtimeSinceStartup+dashTime;
+           
         }
 
         void Update()
@@ -118,6 +124,8 @@ namespace CMF
 
             mover.SetExtendSensorRange(isGrounded);
             mover.SetVelocity(_velocity);
+
+
         }
 
         private Vector3 CalculateMovementDirection()
@@ -182,7 +190,11 @@ namespace CMF
         {
             return isGrounded;
         }
+
+
+        
     }
+
 }
 
 

@@ -59,6 +59,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+    - target: {fileID: 54877782505465454, guid: fda96051142388e4cbaf774de278a4fc, type: 3}
+      propertyPath: m_Interpolate
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 114503568206237290, guid: fda96051142388e4cbaf774de278a4fc, type: 3}
       propertyPath: controller
       value: 
