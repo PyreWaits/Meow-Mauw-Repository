@@ -11,4 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Desert.unity
     guid: 259c0829358fe514aa80c2145e3536df
+  - enabled: 1
+    path: Assets/Scenes/Ruins.unity
+    guid: 11e939daf3cf3ab4eb68fcee7fded5a8
+  - enabled: 1
+    path: Assets/Scenes/Oasis.unity
+    guid: 6252e3c5c9f78cb42a0c5796618d56bc
   m_configObjects: {}
