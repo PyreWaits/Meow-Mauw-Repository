@@ -3137,7 +3137,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56560157f51a3ef4385a61257de62ef8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  capesNeeded: 0
+  capesNeeded: 10
 --- !u!4 &6012474011149334047
 Transform:
   m_ObjectHideFlags: 0
@@ -3302,14 +3302,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 642354955750528549, guid: 48cc310591a7016499716574ec3aa003, type: 3}
-      propertyPath: m_Height
-      value: 1.93
-      objectReference: {fileID: 0}
-    - target: {fileID: 642354955750528549, guid: 48cc310591a7016499716574ec3aa003, type: 3}
-      propertyPath: m_Center.y
-      value: 1.235
-      objectReference: {fileID: 0}
     - target: {fileID: 651822367308348851, guid: 48cc310591a7016499716574ec3aa003, type: 3}
       propertyPath: m_Name
       value: PlayerCharacter
