@@ -81,7 +81,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 114113175590276292, guid: fda96051142388e4cbaf774de278a4fc, type: 3}
       propertyPath: stepHeightRatio
-      value: 0.025
+      value: 0.035
       objectReference: {fileID: 0}
     - target: {fileID: 114503568206237290, guid: fda96051142388e4cbaf774de278a4fc, type: 3}
       propertyPath: controller
@@ -89,7 +89,7 @@ PrefabInstance:
       objectReference: {fileID: 2306416161432690234}
     - target: {fileID: 136438515177174498, guid: fda96051142388e4cbaf774de278a4fc, type: 3}
       propertyPath: m_Height
-      value: 1.964
+      value: 1.93
       objectReference: {fileID: 0}
     - target: {fileID: 136438515177174498, guid: fda96051142388e4cbaf774de278a4fc, type: 3}
       propertyPath: m_Radius
@@ -97,7 +97,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 136438515177174498, guid: fda96051142388e4cbaf774de278a4fc, type: 3}
       propertyPath: m_Center.y
-      value: 1.218
+      value: 1.235
       objectReference: {fileID: 0}
     - target: {fileID: 136438515177174498, guid: fda96051142388e4cbaf774de278a4fc, type: 3}
       propertyPath: m_Material

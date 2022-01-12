@@ -9,6 +9,7 @@ public class Variables : MonoBehaviour
       public static int Capes;
       public static int SunGlasses;
       public static int Scepters;
+
  
 
 }
