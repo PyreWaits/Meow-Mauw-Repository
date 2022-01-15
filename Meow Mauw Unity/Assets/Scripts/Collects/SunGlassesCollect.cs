@@ -10,6 +10,7 @@ public class SunGlassesCollect : MonoBehaviour
          //Checks for player tag
         if(other.gameObject.tag=="Player"){
             Variables.SunGlasses++;
+            Items.scoreSunglasses++;
             Destroy(gameObject);
         }
 

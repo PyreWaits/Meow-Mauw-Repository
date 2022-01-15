@@ -14,9 +14,22 @@ public class LoadScene : MonoBehaviour
         //Checks if gameobject is tagged player
         if(other.gameObject.tag =="Player")
         {
+            if(gameObject.tag=="FallDesert"){
+                Variables.Capes=0;
+                Items.scoreCapes=0;
+            }
+              if(gameObject.tag=="FallRuins"){
+                Variables.SunGlasses=0;
+                Items.scoreSunglasses=0;
+            }
         //kinda obvious
+        Cursor.visible=true;
+        Cursor.lockState=CursorLockMode.None;
         SceneManager.LoadScene(level);     
         }
+        
+
     }
+    
     
 }

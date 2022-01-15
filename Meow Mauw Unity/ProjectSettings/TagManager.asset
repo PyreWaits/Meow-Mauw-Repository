@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Platform
+  - Fall
+  - FallDesert
+  - FallRuins
   layers:
   - Default
   - TransparentFX

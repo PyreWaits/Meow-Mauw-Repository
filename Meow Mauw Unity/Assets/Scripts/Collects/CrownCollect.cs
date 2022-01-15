@@ -10,6 +10,7 @@ public class CrownCollect : MonoBehaviour
          //Checks for player tag
         if(other.gameObject.tag=="Player"){
             Variables.Crowns++;
+            Items.scoreCrowns++;
             Destroy(gameObject);
         }
 

@@ -10,6 +10,7 @@ public class CapeCollect : MonoBehaviour
          //Checks for player tag
         if(other.gameObject.tag=="Player"){
             Variables.Capes++;
+            Items.scoreCapes++;
             Destroy(gameObject);
         }
 

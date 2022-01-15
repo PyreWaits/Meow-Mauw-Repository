@@ -51,6 +51,8 @@ namespace CMF
             characterInput = GetComponent<CharacterInput>();
             colorMesh=GetComponentInChildren<MeshRenderer>();
            startTime=Time.realtimeSinceStartup+dashTime;
+           Cursor.lockState=CursorLockMode.Locked;
+           Cursor.visible=false;
            
         }
 
